@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //pages
@@ -7,19 +7,13 @@ import PostPage from './pages/post';
 import AuthorPage from './pages/author';
 
 function App() {
-  const [page] = useState(0);
-
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="post_page" element={<PostPage />} />
-          <Route path="authot_page" element={<AuthorPage />} />
-
-          {/* {page === 0 && <MainPage />}
-          {page === 1 && <PostPage />}
-          {page === 2 && <AuthorPage />} */}
+          <Route path="post-page:id" element={<PostPage />} />
+          <Route path="authot-page:id" element={<AuthorPage />} />
         </Routes>
       </BrowserRouter>
     </div>

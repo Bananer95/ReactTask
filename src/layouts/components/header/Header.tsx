@@ -5,8 +5,8 @@ import { Navigation } from './Navigation';
 
 const navigation = [
   { name: 'Stories', to: '/' },
-  { name: 'Post', to: '/post_page' },
-  { name: 'Author', to: '/authot_page' },
+  { name: 'Post', to: '/post-page:id' },
+  { name: 'Author', to: '/authot-page:id' },
 ];
 
 const Header = () => {
