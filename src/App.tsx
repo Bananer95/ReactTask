@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="post-page:id" element={<PostPage />} />
-          <Route path="authot-page:id" element={<AuthorPage />} />
+          <Route path="post-page/:id" element={<PostPage />} />
+          <Route path="authot-page/:id" element={<AuthorPage />} />
         </Routes>
       </BrowserRouter>
     </div>
